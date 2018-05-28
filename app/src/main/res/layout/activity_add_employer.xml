@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="13dp">
+
+        <ImageButton
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_close"
+            android:tint="#515D74" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Employer Details"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:typeface="sfuiMedium" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Employer Name"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp"
+            app:typeface="sfuiRegular" />
+
+        <EditText
+            android:id="@+id/et_employer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/transparent"
+            android:hint="Enter employer name"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="URL"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/transparent"
+            android:hint="eg: www.example.com"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Twitter Handle"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_twitter_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/transparent"
+            android:gravity="left|top"
+            android:hint="Enter twitter handle"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Email"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp"
+            app:typeface="sfuiMedium" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/transparent"
+            android:hint="johndoe@example.com"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="About Company"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp"
+            app:typeface="sfuiMedium" />
+
+        <EditText
+            android:id="@+id/et_aboutCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/transparent"
+            android:hint="Write Something..."
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/blue_rounded_border"
+            android:onClick="onPreviewJobPostClick"
+            android:text="Preview Job Post"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

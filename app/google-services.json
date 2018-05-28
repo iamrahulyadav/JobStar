@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "965339709920",
+    "firebase_url": "https://jobstar-4cdfd.firebaseio.com",
+    "project_id": "jobstar-4cdfd",
+    "storage_bucket": "jobstar-4cdfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965339709920:android:67904b5676c6e446",
+        "android_client_info": {
+          "package_name": "com.papercutlabs.jobstar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965339709920-tjra5u7l53jvi8u7a9tsk85c6mk4rmph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.papercutlabs.jobstar",
+            "certificate_hash": "e79d7cd230ea5cc3aa07625425766fd334a570b6"
+          }
+        },
+        {
+          "client_id": "965339709920-g19dqv58cnaclsqmle22hgmo6gqne9s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC69TMbI0ndNTwP5aSDp4uYBYtRyHal6U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965339709920-g19dqv58cnaclsqmle22hgmo6gqne9s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

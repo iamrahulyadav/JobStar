@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="13dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:id="@+id/ll_organization_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/purple_border_box">
+
+            <include
+                layout="@layout/include_organization_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.papercutlabs.jobstar.view.CustomTextView
+                android:id="@+id/ctv_job_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hyderabad"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#9BA2AF"
+                app:typeface="sfuiRegular" />>
+
+            <com.papercutlabs.jobstar.view.CustomTextView
+                android:id="@+id/ctv_jobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Full Stack Developer"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="#ffffff"
+                app:typeface="sfuiMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.papercutlabs.jobstar.view.CustomTextView
+                    android:id="@+id/ctv_companyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="InkMonk"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#9BA2AF"
+                    app:typeface="sfuiRegular" />
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/light_primary_circle"
+                    android:padding="13dp" />
+
+                <com.papercutlabs.jobstar.view.CustomTextView
+                    android:id="@+id/ctv_contractType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Fulltime"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#9BA2AF"
+                    app:typeface="sfuiRegular" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:id="@+id/ctv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="27 Feb"
+            android:textColor="#9BA2AF"
+            app:typeface="sfuiRegular" />
+    </LinearLayout>
+
+
+</LinearLayout>

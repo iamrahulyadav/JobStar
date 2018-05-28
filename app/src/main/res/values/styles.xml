@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyMaterialThemeWhite" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="ActionBarThemeSmall" parent="Theme.AppCompat.Light">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--Action bar style-->
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+
+        <item name="android:homeAsUpIndicator">@drawable/ic_left_back</item>
+
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="android:height">@dimen/bar_height</item>
+        <item name="height">@dimen/bar_height</item>
+        <item name="background">@color/grey_dark</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/bar_text_size</item>
+        <item name="android:textColor">@color/bar_text_color</item>
+
+    </style>
+
+</resources>

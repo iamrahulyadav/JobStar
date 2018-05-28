@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="13dp">
+
+        <ImageButton
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_close"
+            android:tint="#515D74" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Post a Job"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:typeface="sfuiMedium" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:text="Title for position"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp"
+            app:typeface="sfuiRegular" />
+
+        <EditText
+            android:id="@+id/et_poition_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="Enter job title"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey_hard"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Type of Contract"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp"
+            app:typeface="sfuiMedium" />
+
+        <RadioGroup
+            android:id="@+id/rg_contract_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_contract_ft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Full Time"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_contract_st"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Short Term"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_contract_pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Part Time"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+        </RadioGroup>
+
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Category"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp"
+            app:typeface="sfuiMedium" />
+
+        <RadioGroup
+            android:id="@+id/rg_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_programming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Programming"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Design"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_electronics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Full Time"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_testing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Testing"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_sysadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="System Admin"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_writer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Writer"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_developer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Developer"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_operations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="7dp"
+                android:paddingLeft="7dp"
+                android:text="Operations"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_custsupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Customer Support"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_hr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Human Resources"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+            <com.papercutlabs.jobstar.view.CustomRadioButton
+                android:id="@+id/rb_category_bm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:button="@drawable/checkbox_selector"
+                android:buttonTint="#626D81"
+                android:drawablePadding="3dp"
+                android:paddingLeft="7dp"
+                android:text="Business management"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:typeface="sfuiRegular" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Location"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="Enter job location"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey_hard"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Key Skills [With comma as seperator]"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_keyskills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="Enter key skills seperated by comma"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey_hard"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+        <CheckBox
+            android:id="@+id/chkbx_relocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:button="@drawable/checkbox_square_normal"
+            android:buttonTint="#626D81"
+            android:drawablePadding="3dp"
+            android:paddingLeft="7dp"
+            android:text="Relocation Available"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Description"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:gravity="left|top"
+            android:hint="Enter job description"
+            android:imeOptions="actionNext"
+            android:lines="4"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey_hard"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="What should candidate submit when applying for a job?"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp"
+            app:typeface="sfuiMedium" />
+
+        <EditText
+            android:id="@+id/et_what_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="Eg: CV, Resume etc."
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey_hard"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Need to fill the position by which date?"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#626D81"
+            android:textSize="13sp"
+            app:typeface="sfuiMedium" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:id="@+id/ctv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="date"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:typeface="sfuiRegular" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#626D81" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_rounded_border"
+            android:onClick="onNextClick"
+            android:text="NEXT"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

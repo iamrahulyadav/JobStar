@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_background"
+        android:orientation="vertical"
+        android:paddingBottom="13dp"
+        android:paddingLeft="21dp"
+        android:paddingTop="13dp">
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:onClick="onPostJobClick"
+            android:text="Post a Job"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            app:typeface="sfuiRegular" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="CONTENT"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4458E8"
+            app:typeface="sfuiMedium" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Bookmarks"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            app:typeface="sfuiRegular" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="SUPPORT"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4458E8"
+            app:typeface="sfuiMedium" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Provide Feedback"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            app:typeface="sfuiRegular" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Privacy Policy"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            app:typeface="sfuiRegular" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Share App"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            app:typeface="sfuiRegular" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Rate App"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            app:typeface="sfuiRegular" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Terms of service"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            app:typeface="sfuiRegular" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="ABOUT"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#4458E8"
+            app:typeface="sfuiMedium" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Version 1.0.1"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            app:typeface="sfuiRegular" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

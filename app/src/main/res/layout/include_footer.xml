@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_background"
+    android:orientation="horizontal"
+    android:padding="7dp"
+    android:weightSum="4">
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:onClick="onSearchMenuClick"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_search" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:onClick="onNotificationMenuClick"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_notification" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:onClick="onMediaMenuClick"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_task" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:onClick="onProfileMenuClick"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_profile" />
+
+</LinearLayout>

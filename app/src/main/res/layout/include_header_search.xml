@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_background"
+    android:orientation="horizontal"
+    android:padding="7dp">
+
+    <ImageButton
+        android:id="@+id/ib_hamburger"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:padding="7dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_hamburger_menu" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/ib_hamburger">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:orientation="vertical">
+
+            <com.papercutlabs.jobstar.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Type"
+                app:typeface="sfuiRegular"
+                android:textColor="#48556D" />
+
+            <com.papercutlabs.jobstar.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Type"
+                app:typeface="sfuiRegular"
+                android:textColor="#FFFFFFFF" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/transparent"
+            android:padding="21dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_spinner_arrow" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:padding="7dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_filter" />
+</RelativeLayout>

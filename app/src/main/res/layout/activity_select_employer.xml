@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="21dp">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="21dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_close"
+            android:tint="#515D74" />
+
+        <TextView
+            android:id="@+id/tv_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:text="Employer Details"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_top"
+        android:background="@drawable/grey_border_box"
+
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_employers"
+            android:layout_width="match_parent"
+            android:layout_height="330dp" />
+
+        <!-- <include
+             layout="@layout/include_employer_details"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+         <include
+             layout="@layout/include_employer_details_second"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />-->
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_middle"
+        android:layout_marginTop="21dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="3dp"
+            android:onClick="onAddEmployerClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:text="Add New Employer"
+            android:onClick="onAddEmployerClick"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/blue_rounded_border"
+        android:onClick="onPreview"
+        android:text="Preview Job Post"
+        android:textColor="@color/white" />
+</RelativeLayout>

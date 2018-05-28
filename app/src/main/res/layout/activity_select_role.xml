@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_activity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="41dp"
+        android:orientation="vertical">
+        <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jobstar"
+                    android:textColor="#ffffff"
+                    android:textSize="38sp" />-->
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="35sp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_splash_icon" />
+
+        <com.papercutlabs.jobstar.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Hired"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            app:typeface="sfuiMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/primary_background"
+        android:orientation="vertical"
+        android:paddingBottom="13dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/jobseeker_rounded_border"
+            android:onClick="onJobSeekerClick"
+            android:text="I am looking for a job"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/jobgiver_rounded_border"
+            android:onClick="onJobGiverClick"
+            android:text="I am hiring"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
